@@ -448,6 +448,7 @@
 		5CFABD0E18F6B2A9000CAC95 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = i386;
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NSStringColorSample.app/NSStringColorSample";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -463,6 +464,7 @@
 				INFOPLIST_FILE = "NSStringColorSampleTests/NSStringColorSampleTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
+				VALID_ARCHS = i386;
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
@@ -470,6 +472,7 @@
 		5CFABD0F18F6B2A9000CAC95 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = i386;
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NSStringColorSample.app/NSStringColorSample";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -481,6 +484,7 @@
 				INFOPLIST_FILE = "NSStringColorSampleTests/NSStringColorSampleTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
+				VALID_ARCHS = i386;
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
