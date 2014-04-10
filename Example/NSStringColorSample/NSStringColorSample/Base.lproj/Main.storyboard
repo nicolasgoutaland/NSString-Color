@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4hc-QW-vDN">
+                                <rect key="frame" x="60" y="241" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="paO-h5-aJq"/>
+                                </constraints>
+                            </view>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Yxx-Vh-Dln">
+                                <rect key="frame" x="20" y="134" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Bu1-hL-ck3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="iil-mc-9yc"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter a color name, UIColor static method name, hexadecimal code, ... red, redColor, #FF2255, eeeeee, teal, RosyBrown, etc..." lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="Zz8-a2-062">
+                                <rect key="frame" x="20" y="43" width="280" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="82" id="CKa-HZ-YLc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.80441151494565211" green="0.80441151494565211" blue="0.80441151494565211" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" relation="greaterThanOrEqual" secondItem="4hc-QW-vDN" secondAttribute="bottom" constant="20" id="28D-cT-Ohe"/>
+                            <constraint firstItem="4hc-QW-vDN" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Yxx-Vh-Dln" secondAttribute="bottom" constant="20" id="4Kg-dH-hL8"/>
+                            <constraint firstAttribute="trailing" secondItem="Yxx-Vh-Dln" secondAttribute="trailing" constant="20" id="4ix-Fs-Fg6"/>
+                            <constraint firstAttribute="trailing" secondItem="4hc-QW-vDN" secondAttribute="trailing" constant="60" id="6dN-q2-dk4"/>
+                            <constraint firstItem="Zz8-a2-062" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="6wn-O8-EhN"/>
+                            <constraint firstItem="Yxx-Vh-Dln" firstAttribute="top" secondItem="Zz8-a2-062" secondAttribute="bottom" constant="9" id="J3t-c9-TDb"/>
+                            <constraint firstAttribute="centerX" secondItem="Yxx-Vh-Dln" secondAttribute="centerX" id="NXs-hm-Yfe"/>
+                            <constraint firstAttribute="centerY" secondItem="4hc-QW-vDN" secondAttribute="centerY" constant="-57" id="T3i-Ax-WR9"/>
+                            <constraint firstItem="Zz8-a2-062" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="23" id="c2e-IY-FVT"/>
+                            <constraint firstItem="4hc-QW-vDN" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="60" id="hWO-bA-E8I"/>
+                            <constraint firstItem="Yxx-Vh-Dln" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="jGD-PH-Hti"/>
+                            <constraint firstAttribute="trailing" secondItem="Zz8-a2-062" secondAttribute="trailing" constant="20" id="zrv-a0-Kxu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="resultView" destination="4hc-QW-vDN" id="dYm-gp-zfn"/>
+                        <outlet property="textField" destination="Yxx-Vh-Dln" id="cmS-uF-c1n"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

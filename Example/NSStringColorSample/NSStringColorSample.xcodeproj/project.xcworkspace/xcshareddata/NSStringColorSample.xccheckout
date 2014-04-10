@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>8482F8E7-90F0-4F4B-81E0-07995F32ABD1</string>
+	<key>IDESourceControlProjectName</key>
+	<string>NSStringColorSample</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>8B743851-934A-4FCD-91CD-165F441B3793</key>
+		<string>https://github.com/nicolasgoutaland/NSString-Color.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Example/NSStringColorSample/NSStringColorSample.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>8B743851-934A-4FCD-91CD-165F441B3793</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/nicolasgoutaland/NSString-Color.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>8B743851-934A-4FCD-91CD-165F441B3793</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8B743851-934A-4FCD-91CD-165F441B3793</string>
+			<key>IDESourceControlWCCName</key>
+			<string>NSString-Color</string>
+		</dict>
+	</array>
+</dict>
+</plist>
