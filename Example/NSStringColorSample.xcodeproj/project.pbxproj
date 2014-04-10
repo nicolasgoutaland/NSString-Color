@@ -21,8 +21,8 @@
 		5CFABCFD18F6B2A9000CAC95 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CFABCDF18F6B2A9000CAC95 /* UIKit.framework */; };
 		5CFABD0518F6B2A9000CAC95 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5CFABD0318F6B2A9000CAC95 /* InfoPlist.strings */; };
 		5CFABD0718F6B2A9000CAC95 /* NSStringColorSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CFABD0618F6B2A9000CAC95 /* NSStringColorSampleTests.m */; };
-		5CFABD1718F6B92A000CAC95 /* NSString+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CFABD1618F6B92A000CAC95 /* NSString+Color.m */; };
-		5CFABD1818F6B92F000CAC95 /* NSString+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CFABD1618F6B92A000CAC95 /* NSString+Color.m */; };
+		5CFABD1B18F6D5E7000CAC95 /* NSString+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CFABD1A18F6D5E7000CAC95 /* NSString+Color.m */; };
+		5CFABD1C18F6D5E7000CAC95 /* NSString+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CFABD1A18F6D5E7000CAC95 /* NSString+Color.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,8 +55,8 @@
 		5CFABD0218F6B2A9000CAC95 /* NSStringColorSampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NSStringColorSampleTests-Info.plist"; sourceTree = "<group>"; };
 		5CFABD0418F6B2A9000CAC95 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5CFABD0618F6B2A9000CAC95 /* NSStringColorSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSStringColorSampleTests.m; sourceTree = "<group>"; };
-		5CFABD1518F6B92A000CAC95 /* NSString+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Color.h"; path = "../../Classes/NSString+Color.h"; sourceTree = "<group>"; };
-		5CFABD1618F6B92A000CAC95 /* NSString+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Color.m"; path = "../../Classes/NSString+Color.m"; sourceTree = "<group>"; };
+		5CFABD1918F6D5E7000CAC95 /* NSString+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Color.h"; path = "../Classes/NSString+Color.h"; sourceTree = "<group>"; };
+		5CFABD1A18F6D5E7000CAC95 /* NSString+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Color.m"; path = "../Classes/NSString+Color.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,8 +192,8 @@
 		5CFABD1418F6B91D000CAC95 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
-				5CFABD1518F6B92A000CAC95 /* NSString+Color.h */,
-				5CFABD1618F6B92A000CAC95 /* NSString+Color.m */,
+				5CFABD1918F6D5E7000CAC95 /* NSString+Color.h */,
+				5CFABD1A18F6D5E7000CAC95 /* NSString+Color.m */,
 			);
 			name = Lib;
 			sourceTree = "<group>";
@@ -296,7 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CFABCF218F6B2A9000CAC95 /* ViewController.m in Sources */,
-				5CFABD1718F6B92A000CAC95 /* NSString+Color.m in Sources */,
+				5CFABD1B18F6D5E7000CAC95 /* NSString+Color.m in Sources */,
 				5CFABCEC18F6B2A9000CAC95 /* AppDelegate.m in Sources */,
 				5CFABCE818F6B2A9000CAC95 /* main.m in Sources */,
 			);
@@ -307,7 +307,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CFABD0718F6B2A9000CAC95 /* NSStringColorSampleTests.m in Sources */,
-				5CFABD1818F6B92F000CAC95 /* NSString+Color.m in Sources */,
+				5CFABD1C18F6D5E7000CAC95 /* NSString+Color.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,6 +504,7 @@
 				5CFABD0C18F6B2A9000CAC95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5CFABD0D18F6B2A9000CAC95 /* Build configuration list for PBXNativeTarget "NSStringColorSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +513,7 @@
 				5CFABD0F18F6B2A9000CAC95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
