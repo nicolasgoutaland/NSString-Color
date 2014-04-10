@@ -427,6 +427,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NSStringColorSample/NSStringColorSample-Prefix.pch";
 				INFOPLIST_FILE = "NSStringColorSample/NSStringColorSample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -440,6 +441,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NSStringColorSample/NSStringColorSample-Prefix.pch";
 				INFOPLIST_FILE = "NSStringColorSample/NSStringColorSample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -462,6 +464,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "NSStringColorSampleTests/NSStringColorSampleTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				VALID_ARCHS = i386;
@@ -482,6 +485,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NSStringColorSample/NSStringColorSample-Prefix.pch";
 				INFOPLIST_FILE = "NSStringColorSampleTests/NSStringColorSampleTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				VALID_ARCHS = i386;
