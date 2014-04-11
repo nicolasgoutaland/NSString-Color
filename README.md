@@ -1,4 +1,4 @@
-#NSString-Color [![Build Status](https://travis-ci.org/nicolasgoutaland/NSString-Color.svg?branch=master)](https://travis-ci.org/nicolasgoutaland/NSString-Color)
+#NSString+Color [![Build Status](https://travis-ci.org/nicolasgoutaland/NSString-Color.svg?branch=master)](https://travis-ci.org/nicolasgoutaland/NSString-Color)
 
 Category on `NSString` allowing simple color instantiation from its content. Support web colors also.
 
