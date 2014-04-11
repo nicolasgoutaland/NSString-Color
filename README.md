@@ -4,11 +4,10 @@ Category on `NSString` allowing simple color instantiation from its content. Sup
 
 ##Description
 This category adds four methods to NSString.
-- (UIColor *)colorFromRGBcode	// Consider string as an hexadecimal RGB code
-- (UIColor *)colorFromRGBAcode	// Consider string as an hexadecimal RGBA code
-- (UIColor *)colorFromName		// Consider string as a webcolor name, UIColor selector name
-
-- (UIColor *)representedColor	// This method will automatically choose between three others methods in order to generate a color
+- (UIColor *)colorFromRGBcode   // Consider string as an hexadecimal RGB code
+- (UIColor *)colorFromRGBAcode  // Consider string as an hexadecimal RGBA code
+- (UIColor *)colorFromName      // Consider string as a webcolor name, UIColor selector name
+- (UIColor *)representedColor   // This method will automatically choose between three others methods in order to generate a color
 
 This allows you to load color codes from configuration file, such as `PLIST` and create colors to configure your views background color for example.
 All created colors are cached using `NSCache`, allowing you to reuse them.
