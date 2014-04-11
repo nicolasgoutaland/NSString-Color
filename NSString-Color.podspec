@@ -10,8 +10,8 @@ Pod::Spec.new do |s|
 					As a bonus, category also embeds a list of predefined web colors, according to http://en.wikipedia.org/wiki/Web_colors
 					Category also works with FPBrandColors, since FPBrandColors is a category for UIColor, such as @"Facebook", @"Dropbox"
 
-					Main use case is when loading color configuration from data file.
-					
+					Main use case is when loading color configuration from configuration file.
+
 					ARC only
                    DESC
 
