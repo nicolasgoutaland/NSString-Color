@@ -3,14 +3,14 @@
 Category on `NSString` allowing simple color instantiation from its content. Support web colors also.
 
 ##Description
-This category add four methods to NSString.
+This category adds four methods to NSString.
 - (UIColor *)colorFromRGBcode	// Consider string as an hexadecimal RGB code
 - (UIColor *)colorFromRGBAcode	// Consider string as an hexadecimal RGBA code
 - (UIColor *)colorFromName		// Consider string as a webcolor name, UIColor selector name
 
 - (UIColor *)representedColor	// This method will automatically choose between three others methods in order to generate a color
 
-This allows you to load colors code from configuration file, such as `PLIST` and create colors to configure your views background color for example.
+This allows you to load color codes from configuration file, such as `PLIST` and create colors to configure your views background color for example.
 All created colors are cached using `NSCache`, allowing you to reuse them.
 Webcolor names are case insensitive, and you can specify `UIColor` selectors name without Color suffix.
 
@@ -52,7 +52,7 @@ If you are using UIColor categories to add some color code to your project, such
 ```
 
 ##Consideration
-While colorFromName will return nil if color nama is unknown, colorFromRGBAcode and colorFromRGBcode will return you an undefined color if hexadecimal code is invalid.
+While colorFromName will return nil if color name is unknown, colorFromRGBAcode and colorFromRGBcode will return you an undefined color if hexadecimal code is invalid.
 Same apply to representedColor when forcing hexadecimal format (Prefixing with #)
 
 ##Installation
