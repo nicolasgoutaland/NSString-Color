@@ -43,7 +43,7 @@ For a list of webcolors, http://en.wikipedia.org/wiki/Web_colors
 * Add web colors
 
 ##Bonus
-If you are using UIColor categories to add some color code to your project, such as https://github.com/magtory/FPBrandColors, youcan load them from configuration file too.
+If you are using UIColor categories to add some color code to your project, such as https://github.com/magtory/FPBrandColors, you can load them from configuration file too.
 
 ```objective-c
   [@"Facebook" representedColor];        // UIColor selector name from FPBrandColors
