@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
+#define CUSTOM_COLORS_FILE  @"CustomColors"
+
 @interface ViewController ()
 // Outlets
 @property (nonatomic, weak) IBOutlet UITextField *textField;
@@ -24,6 +26,11 @@
     _resultView.layer.borderColor = [@"black" representedColor].CGColor;
     _resultView.layer.borderWidth = 2.0;
     _resultView.layer.cornerRadius = 4.0;
+    
+    // Register som custom colorspho
+    NSString *colorsPath          = [[NSBundle mainBundle] pathForResource:CUSTOM_COLORS_FILE ofType:@"plist"];
+    NSDictionary *dicCustomColors = [NSDictionary dictionaryWithContentsOfFile:colorsPath];
+    [NSString registerColors:dicCustomColors];
 }
 
 #pragma mark - UITextFieldDelegate methods

@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   s.name         = "NSString+Color"
   s.version      = "1.0.0"
   s.summary      = "UIColor creation from NSString"
-
+  s.platform     = :ios
   s.description  = <<-DESC
 	  				NSString category allowing you to create UIColor from it.
 

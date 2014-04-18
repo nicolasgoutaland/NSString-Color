@@ -68,4 +68,46 @@
     XCTAssertNil([@"not a color" representedColor], @"not a color should not return a color");
 }
 
+- (void)testRegisteredColor
+{
+    NSString *key = @"myCustomColor";
+    NSString *keyCaseUpdated = @"MyCuSTOMcolor";
+
+    XCTAssertNil([NSString registeredColorForKey:key], @"myCustomColor should not return a color");
+    XCTAssertNil([NSString registeredColorForKey:keyCaseUpdated], @"MyCuSTOMcolor should not return a color");
+
+    UIColor *registeredColor = [UIColor redColor];
+    [NSString registerColor:registeredColor
+                    withKey:key];
+
+    XCTAssertNotNil([NSString registeredColorForKey:key], @"myCustomColor should return a color");
+    XCTAssertNotNil([NSString registeredColorForKey:keyCaseUpdated], @"MyCuSTOMcolor should return a color");
+    XCTAssertEqual(registeredColor, [NSString registeredColorForKey:key], @"Returned color is not correct");
+
+    [NSString clearRegisteredColorForKey:key];
+    XCTAssertNil([NSString registeredColorForKey:key], @"myCustomColor should not return a color");
+    XCTAssertNil([NSString registeredColorForKey:keyCaseUpdated], @"MyCuSTOMcolor should not return a color");
+}
+
+- (void)testRegisteredColorOverride
+{
+    UIColor *blueColor = [UIColor blueColor];
+    XCTAssertNil([NSString registeredColorForKey:@"myCustomColor"], @"myCustomColor should not return a registered color");
+    [NSString registerColor:blueColor withKey:@"myCustomColor"];
+
+    UIColor *registeredCustomColor = [NSString registeredColorForKey:@"myCustomColor"];
+    XCTAssertEqual(blueColor, registeredCustomColor, @"registered custom color should be the same as blueColor");
+
+    registeredCustomColor = [@"myCustomColor" representedColor];
+    XCTAssertEqual(blueColor, registeredCustomColor, @"registered custom color should be the same as blueColor");
+
+    [NSString registerColors:@{@"myCustomColor": [@"redColor" representedColor], @"myOtherCustomColor" : @"yellow", @"wrongColorRepresentation" : @"jklsjlfs", @"ortherWrongColorRepresentation" : @[@""]}];
+
+    registeredCustomColor = [@"myCustomColor" representedColor];
+    XCTAssertNotEqual(blueColor, registeredCustomColor, @"registered custom color should be different than blueColor");
+
+    XCTAssertNotNil([@"myOtherCustomColor" representedColor], @"myOtherCustomColor should return a color");
+    XCTAssertNil([@"wrongColorRepresentation" representedColor], @"wrongColorRepresentation should not return a color");
+    XCTAssertNil([@"ortherWrongColorRepresentation" representedColor], @"wrongColorRepresentation should not return a color");
+}
 @end

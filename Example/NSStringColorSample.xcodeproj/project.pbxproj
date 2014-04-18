@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5CB2AA6C190145A10029340A /* CustomColors.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5CB2AA6B190145A10029340A /* CustomColors.plist */; };
 		5CFABCDC18F6B2A9000CAC95 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CFABCDB18F6B2A9000CAC95 /* Foundation.framework */; };
 		5CFABCDE18F6B2A9000CAC95 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CFABCDD18F6B2A9000CAC95 /* CoreGraphics.framework */; };
 		5CFABCE018F6B2A9000CAC95 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CFABCDF18F6B2A9000CAC95 /* UIKit.framework */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5CB2AA6B190145A10029340A /* CustomColors.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CustomColors.plist; sourceTree = "<group>"; };
 		5CFABCD818F6B2A9000CAC95 /* NSStringColorSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSStringColorSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CFABCDB18F6B2A9000CAC95 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5CFABCDD18F6B2A9000CAC95 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -166,6 +168,7 @@
 		5CFABD1118F6B889000CAC95 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5CB2AA6B190145A10029340A /* CustomColors.plist */,
 				5CFABCF318F6B2A9000CAC95 /* Images.xcassets */,
 				5CFABCED18F6B2A9000CAC95 /* Main.storyboard */,
 			);
@@ -275,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CFABCF418F6B2A9000CAC95 /* Images.xcassets in Resources */,
+				5CB2AA6C190145A10029340A /* CustomColors.plist in Resources */,
 				5CFABCE618F6B2A9000CAC95 /* InfoPlist.strings in Resources */,
 				5CFABCEF18F6B2A9000CAC95 /* Main.storyboard in Resources */,
 			);
