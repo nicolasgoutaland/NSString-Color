@@ -1,19 +1,32 @@
 #NSString+Color [![Build Status](https://travis-ci.org/nicolasgoutaland/NSString-Color.svg?branch=master)](https://travis-ci.org/nicolasgoutaland/NSString-Color)
 
-Category on `NSString` allowing simple color instantiation from its content. Support web colors also.
+Category on `NSString` allowing simple color instantiation from its content. Support web colors and custom colors code also.
 
 ##Description
-This category adds four methods to NSString.
+This category adds following methods to NSString.
+```objective-c
 - (UIColor *)colorFromRGBcode   // Consider string as an hexadecimal RGB code
 - (UIColor *)colorFromRGBAcode  // Consider string as an hexadecimal RGBA code
-- (UIColor *)colorFromName      // Consider string as a webcolor name, UIColor selector name
-- (UIColor *)representedColor   // This method will automatically choose between three others methods in order to generate a color
+- (UIColor *)colorFromName      // Consider string as a webcolor name, UIColor selector name or custom color code
+- (UIColor *)representedColor   // This method will automatically choose between three other methods in order to generate a color
+
++ (UIColor *)webColorForKey:(NSString *)aWebColorName; // Return associated web color
+
++ (void)registerColor:(UIColor *)aColor withKey:(NSString *)aKey; // Register a custom color for given key
++ (void)registerColors:(NSDictionary *)colors;                    // Register a bunch of custom colors
++ (void)clearRegisteredColorForKey:(NSString *)aKey;              // Remove a previously registered color
++ (UIColor *)registeredColorForKey:(NSString *)aKey;              // Retreive a previously registered color
+```
 
 This allows you to load color codes from configuration file, such as `PLIST` and create colors to configure your views background color for example.
 All created colors are cached using `NSCache`, allowing you to reuse them.
 Webcolor names are case insensitive, and you can specify `UIColor` selectors name without Color suffix.
 
 For a list of webcolors, you can have a look at [Wikipedia Web colors page](http://en.wikipedia.org/wiki/Web_colors)
+
+![ScreenShot](https://raw.github.com/nicolasgoutaland/NSString-Color/master/Assets/NSString+Colors.gif)
+
+Last update added support for custom color keys, allowing you to define custom code. You can for example define a *titleColor* key and use it in your application. Custom colors can be retrieved using `representedColor`, `colorFromName` and `registeredColorForKey` methods. This can be really helpful when styling an entire application, allowing you to update color through all screens, just by editing color from a PLIST file for example.  
 
 ![ScreenShot](https://raw.github.com/nicolasgoutaland/NSString-Color/master/Assets/NSString+Colors.gif)
 
@@ -35,6 +48,14 @@ For a list of webcolors, you can have a look at [Wikipedia Web colors page](http
   [@"redColor" colorFromName];      // UIColor full selector name
   [@"red" colorFromName];           // UIColor selector name, without color suffix
   [@"roSyBroWn" colorFromName];     // Web color case insensitive
+```
+
+##Custom color example
+```objective-c
+  [NSString registerColor:[@"#eeeeee"] withKey:@"descriptionText"]; /// Register a custom color
+  [@"descriptionText" representedColor];  // Retrieve a custom color
+  [@"dEscRiptIONText" representedColor];  // Custom color names are case insensitive
+
 ```
 
 ##Advantages
@@ -76,4 +97,5 @@ Import header in your project. .pch is a good place ;)
     #import "NSString+Colors.h"
 
 ##Versions
+1.1 : Added support for custom colors codes<br/>
 1.0 : Initial release<br/>
