@@ -13,7 +13,7 @@ This allows you to load color codes from configuration file, such as `PLIST` and
 All created colors are cached using `NSCache`, allowing you to reuse them.
 Webcolor names are case insensitive, and you can specify `UIColor` selectors name without Color suffix.
 
-For a list of webcolors, http://en.wikipedia.org/wiki/Web_colors
+For a list of webcolors, you can have a look at [Wikipedia Web colors page](http://en.wikipedia.org/wiki/Web_colors)
 
 ![ScreenShot](https://raw.github.com/nicolasgoutaland/NSString-Color/master/Assets/NSString+Colors.gif)
 
@@ -43,11 +43,24 @@ For a list of webcolors, http://en.wikipedia.org/wiki/Web_colors
 * Add web colors
 
 ##Bonus
-If you are using UIColor categories to add some color code to your project, such as https://github.com/magtory/FPBrandColors, you can load them from configuration file too.
+If you are using UIColor categories to add some color code to your project, you can load them from configuration file too. Be careful, selector name are case sensitive.
 
+* [FPBrandColors](https://github.com/magtory/FPBrandColors)
 ```objective-c
   [@"Facebook" representedColor];        // UIColor selector name from FPBrandColors
   [@"Github" representedColor];          // UIColor selector name from FPBrandColors
+```
+
+* [UIColor-FlatColors](https://github.com/mokagio/UIColor-FlatColors)
+```objective-c
+  [@"flatEmeraldColor" representedColor];        // UIColor selector name from FPBrandColors
+  [@"flatPomegranateColor" representedColor];          // UIColor selector name from FPBrandColors
+```
+
+* [UIColor-CSSColors](https://github.com/mokagio/UIColor-CSSColors)
+```objective-c
+  [@"cssBurlywoodColor" representedColor];        // UIColor selector name from FPBrandColors
+  [@"cssLightgoldenrodyellowColor" representedColor];          // UIColor selector name from FPBrandColors
 ```
 
 ##Consideration
