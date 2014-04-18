@@ -47,20 +47,20 @@ If you are using UIColor categories to add some color code to your project, you 
 
 * [FPBrandColors](https://github.com/magtory/FPBrandColors)
 ```objective-c
-  [@"Facebook" representedColor];        // UIColor selector name from FPBrandColors
-  [@"Github" representedColor];          // UIColor selector name from FPBrandColors
+  [@"Facebook" representedColor];                      // UIColor selector name from FPBrandColors
+  [@"Github" representedColor];                        // UIColor selector name from FPBrandColors
 ```
 
 * [UIColor-FlatColors](https://github.com/mokagio/UIColor-FlatColors)
 ```objective-c
-  [@"flatEmeraldColor" representedColor];        // UIColor selector name from FPBrandColors
-  [@"flatPomegranateColor" representedColor];          // UIColor selector name from FPBrandColors
+  [@"flatEmeraldColor" representedColor];              // UIColor selector name from UIColor-FlatColors
+  [@"flatPomegranateColor" representedColor];          // UIColor selector name from UIColor-FlatColors
 ```
 
 * [UIColor-CSSColors](https://github.com/mokagio/UIColor-CSSColors)
 ```objective-c
-  [@"cssBurlywoodColor" representedColor];        // UIColor selector name from FPBrandColors
-  [@"cssLightgoldenrodyellowColor" representedColor];          // UIColor selector name from FPBrandColors
+  [@"cssBurlywoodColor" representedColor];             // UIColor selector name from UIColor-CSSColors
+  [@"cssLightgoldenrodyellowColor" representedColor];  // UIColor selector name from UIColor-CSSColors
 ```
 
 ##Consideration
