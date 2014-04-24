@@ -94,7 +94,7 @@ __Manual__: Copy the __Classes__ folder in your project<br>
 
 Import header in your project. .pch is a good place ;)
 
-    #import "NSString+Colors.h"
+    #import "NSString+Color.h"
 
 ##Versions
 1.1 : Added support for custom colors codes<br/>
