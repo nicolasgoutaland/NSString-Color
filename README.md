@@ -89,7 +89,7 @@ While colorFromName will return nil if color name is unknown, colorFromRGBAcode 
 Same apply to representedColor when forcing hexadecimal format (Prefixing with #)
 
 ##Installation
-__Cocoapods__: `pod 'NSString+Colors'`<br>
+__Cocoapods__: `pod 'NSString+Color'`<br>
 __Manual__: Copy the __Classes__ folder in your project<br>
 
 Import header in your project. .pch is a good place ;)
