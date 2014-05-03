@@ -28,7 +28,7 @@ For a list of webcolors, you can have a look at [Wikipedia Web colors page](http
 
 Last update added support for custom color keys, allowing you to define custom code. You can for example define a *titleColor* key and use it in your application. Custom colors can be retrieved using `representedColor`, `colorFromName` and `registeredColorForKey` methods. This can be really helpful when styling an entire application, allowing you to update color through all screens, just by editing color from a PLIST file for example.  
 
-![ScreenShot](https://raw.github.com/nicolasgoutaland/NSString-Color/master/Assets/NSString+Colors.gif)
+![ScreenShot](https://raw.github.com/nicolasgoutaland/NSString-Color/master/Assets/RegisteredColors.gif)
 
 ##Usage
 * simply call one of added method on an NSString object
