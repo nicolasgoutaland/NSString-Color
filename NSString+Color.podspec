@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "NSString+Color"
-  s.version      = "1.1.0"
+  s.version      = "1.1.1"
   s.summary      = "UIColor creation from NSString"
   s.platform     = :ios
   s.description  = <<-DESC
@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/nicolasgoutaland/NSString-Color"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { "nicolasgoutaland" => "nicolas.goutaland@gmail.com" }
-  s.source       = { :git => "https://github.com/nicolasgoutaland/NSString-Color.git", :tag => "1.1.0" }
+s.source       = { :git => "https://github.com/nicolasgoutaland/NSString-Color.git", :tag => "#{s.version}" }
   s.source_files  = 'Classes', 'Classes/**/*.{h,m}'
   s.exclude_files = 'Classes/Exclude'
   s.requires_arc = true

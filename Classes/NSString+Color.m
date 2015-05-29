@@ -30,10 +30,10 @@ static __strong NSRegularExpression *hexadecimalStringRegex;
 }
 
 #pragma mark - Web color
-+ (UIColor *)webColorForKey:(NSString *)aWebColorName
++ (UIColor *)webColorForKey:(NSString *)webColorName
 {
     // Check cache first, to prevent unusful tests
-    NSString *key = [aWebColorName lowercaseString];
+    NSString *key = [webColorName lowercaseString];
     UIColor *color = [colorsCache objectForKey:key];
     if (color)
         return color;
@@ -201,21 +201,21 @@ static __strong NSRegularExpression *hexadecimalStringRegex;
 }
 
 #pragma mark - Custom colors
-+ (void)registerColor:(UIColor *)aColor withKey:(NSString *)aKey
++ (void)registerColor:(UIColor *)color withKey:(NSString *)key
 {
-    NSString *key = [aKey lowercaseString];
+    NSString *lcKey = [key lowercaseString];
 
-    [dicCustomColors setObject:aColor
-                        forKey:key];
-    [colorsCache removeObjectForKey:key];
+    [dicCustomColors setObject:color
+                        forKey:lcKey];
+    [colorsCache removeObjectForKey:lcKey];
 }
 
-+ (void)clearRegisteredColorForKey:(NSString *)aKey
++ (void)clearRegisteredColorForKey:(NSString *)key
 {
-    NSString *key = [aKey lowercaseString];
+    NSString *lcKey = [key lowercaseString];
 
-    [dicCustomColors removeObjectForKey:key];
-    [colorsCache removeObjectForKey:key];
+    [dicCustomColors removeObjectForKey:lcKey];
+    [colorsCache removeObjectForKey:lcKey];
 }
 
 + (void)registerColors:(NSDictionary *)colors
@@ -253,21 +253,21 @@ static __strong NSRegularExpression *hexadecimalStringRegex;
     [dicCustomColors addEntriesFromDictionary:updatedDic];
 }
 
-+ (UIColor *)registeredColorForKey:(NSString *)aKey
++ (UIColor *)registeredColorForKey:(NSString *)key
 {
     // Check cache first, to prevent unusful tests
-    NSString *key = [aKey lowercaseString];
-    UIColor *color = [colorsCache objectForKey:key];
+    NSString *lcKey = [key lowercaseString];
+    UIColor *color = [colorsCache objectForKey:lcKey];
     if (color)
         return color;
 
     // Try to retrieve color
-    color = [dicCustomColors objectForKey:key];
+    color = [dicCustomColors objectForKey:lcKey];
     if (color)
     {
         // Hold color in cache
         [colorsCache setObject:color
-                        forKey:self];
+                        forKey:lcKey];
     }
 
     return color;

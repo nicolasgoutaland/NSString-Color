@@ -16,8 +16,9 @@
 //  Another useful feature is the ability to define custom color codes
 //
 //  Change log
-//  1.1  : Added convenient method to register custom colors
-//  1.0  : Initial release
+//  1.1.1 : Fixed a bug handling cache in + registeredColorForKey method
+//  1.1   : Added convenient method to register custom colors
+//  1.0   : Initial release
 
 #define NSString_Color_HEXADECIMAL_PREFIX                 @"#"
 #define NSString_Color_HEXADECIMAL_COLOR_STRING_REGEX     @"[0-9A-Fa-f]{6,8}"
@@ -33,7 +34,7 @@
  *
  * Be careful, keys are case insensitive !
  */
-+ (void)registerColor:(UIColor *)aColor withKey:(NSString *)aKey;
++ (void)registerColor:(UIColor *)color withKey:(NSString *)key;
 
 /* Register a bunch of custom colors
  * Useful when loading custom colors configuration from a PLIST
@@ -44,15 +45,15 @@
 /* Remove registered color
  * Be careful, keys are case insensitive !
  */
-+ (void)clearRegisteredColorForKey:(NSString *)aKey;
++ (void)clearRegisteredColorForKey:(NSString *)key;
 
 /* Retrieve color registered with given key
  * Be careful, keys are case insensitive !
  */
-+ (UIColor *)registeredColorForKey:(NSString *)aKey;
++ (UIColor *)registeredColorForKey:(NSString *)key;
 
 /* Retrieve web color using lowercase comparison */
-+ (UIColor *)webColorForKey:(NSString *)aWebColorName;
++ (UIColor *)webColorForKey:(NSString *)webColorName;
 
 /* Return color from string, assuming it is an Hexadecimal number representation, without leading character 
  * If string isn't a valid hexadecimal color representation, a color object will still be returned, but with incorrect values

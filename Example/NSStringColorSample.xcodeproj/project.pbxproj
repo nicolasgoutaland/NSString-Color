@@ -37,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5C2736311B189A9F0069D2AD /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		5C2736321B189A9F0069D2AD /* NSString+Color.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = "NSString+Color.podspec"; path = "../NSString+Color.podspec"; sourceTree = "<group>"; };
+		5C2736331B189A9F0069D2AD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		5CB2AA6B190145A10029340A /* CustomColors.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CustomColors.plist; sourceTree = "<group>"; };
 		5CFABCD818F6B2A9000CAC95 /* NSStringColorSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSStringColorSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CFABCDB18F6B2A9000CAC95 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -88,6 +91,9 @@
 		5CFABCCF18F6B2A8000CAC95 = {
 			isa = PBXGroup;
 			children = (
+				5C2736311B189A9F0069D2AD /* LICENSE */,
+				5C2736321B189A9F0069D2AD /* NSString+Color.podspec */,
+				5C2736331B189A9F0069D2AD /* README.md */,
 				5CFABD1418F6B91D000CAC95 /* Lib */,
 				5CFABCE118F6B2A9000CAC95 /* NSStringColorSample */,
 				5CFABD0018F6B2A9000CAC95 /* NSStringColorSampleTests */,
