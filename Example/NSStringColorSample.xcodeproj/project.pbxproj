@@ -251,7 +251,7 @@
 		5CFABCD018F6B2A8000CAC95 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "Nicolas Goutaland";
 				TargetAttributes = {
 					5CFABCF818F6B2A9000CAC95 = {
@@ -460,7 +460,6 @@
 		5CFABD0E18F6B2A9000CAC95 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = i386;
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NSStringColorSample.app/NSStringColorSample";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -477,7 +476,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				VALID_ARCHS = i386;
+				VALID_ARCHS = "x86_64 i386";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
@@ -485,7 +484,6 @@
 		5CFABD0F18F6B2A9000CAC95 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = i386;
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NSStringColorSample.app/NSStringColorSample";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -498,7 +496,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				VALID_ARCHS = i386;
+				VALID_ARCHS = "x86_64 i386";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
