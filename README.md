@@ -97,6 +97,7 @@ Import header in your project. .pch is a good place ;)
     #import "NSString+Color.h"
 
 ##Versions
+1.1.2 : Updated documentation<br/>
 1.1.1 : Fixed a bug handling cache in + registeredColorForKey method<br/>
 1.1   : Added support for custom colors codes<br/>
 1.0   : Initial release<br/>

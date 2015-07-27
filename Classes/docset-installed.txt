@@ -1,0 +1,4 @@
+Documentation set was installed to Xcode!
+
+Path: /Users/gougou/Library/Developer/Shared/Documentation/DocSets/com.eee.eee.eee.docset
+Time: 2015-07-27 17:04:45 +0000
