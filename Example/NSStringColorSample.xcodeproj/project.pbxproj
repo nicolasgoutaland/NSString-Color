@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C53AC8A1B66A0D000B0F260 /* NSString+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CFABD1A18F6D5E7000CAC95 /* NSString+Color.m */; };
+		5C53AC8D1B66A0ED00B0F260 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CFABCDB18F6B2A9000CAC95 /* Foundation.framework */; };
+		5C53AC911B66A22300B0F260 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CFABCDF18F6B2A9000CAC95 /* UIKit.framework */; };
 		5CB2AA6C190145A10029340A /* CustomColors.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5CB2AA6B190145A10029340A /* CustomColors.plist */; };
 		5CFABCDC18F6B2A9000CAC95 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CFABCDB18F6B2A9000CAC95 /* Foundation.framework */; };
 		5CFABCDE18F6B2A9000CAC95 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CFABCDD18F6B2A9000CAC95 /* CoreGraphics.framework */; };
@@ -36,10 +39,25 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		5C53AC701B66A08700B0F260 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		5C2736311B189A9F0069D2AD /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		5C2736321B189A9F0069D2AD /* NSString+Color.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = "NSString+Color.podspec"; path = "../NSString+Color.podspec"; sourceTree = "<group>"; };
 		5C2736331B189A9F0069D2AD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		5C53AC721B66A08700B0F260 /* libNSStringColor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNSStringColor.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C53AC8B1B66A0E400B0F260 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		5C53AC8F1B66A1C900B0F260 /* NSStringColor-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSStringColor-Prefix.pch"; sourceTree = "<group>"; };
 		5CB2AA6B190145A10029340A /* CustomColors.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CustomColors.plist; sourceTree = "<group>"; };
 		5CFABCD818F6B2A9000CAC95 /* NSStringColorSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSStringColorSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CFABCDB18F6B2A9000CAC95 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -65,6 +83,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5C53AC6F1B66A08700B0F260 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C53AC911B66A22300B0F260 /* UIKit.framework in Frameworks */,
+				5C53AC8D1B66A0ED00B0F260 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5CFABCD518F6B2A9000CAC95 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -107,6 +134,7 @@
 			children = (
 				5CFABCD818F6B2A9000CAC95 /* NSStringColorSample.app */,
 				5CFABCF918F6B2A9000CAC95 /* NSStringColorSampleTests.xctest */,
+				5C53AC721B66A08700B0F260 /* libNSStringColor.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,6 +142,7 @@
 		5CFABCDA18F6B2A9000CAC95 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5C53AC8B1B66A0E400B0F260 /* CoreFoundation.framework */,
 				5CFABCDB18F6B2A9000CAC95 /* Foundation.framework */,
 				5CFABCDD18F6B2A9000CAC95 /* CoreGraphics.framework */,
 				5CFABCDF18F6B2A9000CAC95 /* UIKit.framework */,
@@ -138,6 +167,7 @@
 				5CFABCE318F6B2A9000CAC95 /* NSStringColorSample-Info.plist */,
 				5CFABCE418F6B2A9000CAC95 /* InfoPlist.strings */,
 				5CFABCE718F6B2A9000CAC95 /* main.m */,
+				5C53AC8F1B66A1C900B0F260 /* NSStringColor-Prefix.pch */,
 				5CFABCE918F6B2A9000CAC95 /* NSStringColorSample-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -210,6 +240,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5C53AC711B66A08700B0F260 /* NSStringColor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C53AC871B66A08700B0F260 /* Build configuration list for PBXNativeTarget "NSStringColor" */;
+			buildPhases = (
+				5C53AC6E1B66A08700B0F260 /* Sources */,
+				5C53AC6F1B66A08700B0F260 /* Frameworks */,
+				5C53AC701B66A08700B0F260 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NSStringColor;
+			productName = NSStringLib;
+			productReference = 5C53AC721B66A08700B0F260 /* libNSStringColor.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		5CFABCD718F6B2A9000CAC95 /* NSStringColorSample */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5CFABD0A18F6B2A9000CAC95 /* Build configuration list for PBXNativeTarget "NSStringColorSample" */;
@@ -254,6 +301,9 @@
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "Nicolas Goutaland";
 				TargetAttributes = {
+					5C53AC711B66A08700B0F260 = {
+						CreatedOnToolsVersion = 6.4;
+					};
 					5CFABCF818F6B2A9000CAC95 = {
 						TestTargetID = 5CFABCD718F6B2A9000CAC95;
 					};
@@ -274,6 +324,7 @@
 			targets = (
 				5CFABCD718F6B2A9000CAC95 /* NSStringColorSample */,
 				5CFABCF818F6B2A9000CAC95 /* NSStringColorSampleTests */,
+				5C53AC711B66A08700B0F260 /* NSStringColor */,
 			);
 		};
 /* End PBXProject section */
@@ -301,6 +352,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5C53AC6E1B66A08700B0F260 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C53AC8A1B66A0D000B0F260 /* NSString+Color.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5CFABCD418F6B2A9000CAC95 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -359,6 +418,43 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		5C53AC831B66A08700B0F260 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "NSStringColorSample/NSStringColor-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		5C53AC841B66A08700B0F260 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "NSStringColorSample/NSStringColor-Prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		5CFABD0818F6B2A9000CAC95 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -504,6 +600,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5C53AC871B66A08700B0F260 /* Build configuration list for PBXNativeTarget "NSStringColor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C53AC831B66A08700B0F260 /* Debug */,
+				5C53AC841B66A08700B0F260 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		5CFABCD318F6B2A8000CAC95 /* Build configuration list for PBXProject "NSStringColorSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

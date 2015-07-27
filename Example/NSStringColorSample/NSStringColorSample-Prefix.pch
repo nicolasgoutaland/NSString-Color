@@ -11,7 +11,6 @@
 #endif
 
 #ifdef __OBJC__
-    #import <UIKit/UIKit.h>
-    #import <Foundation/Foundation.h>
+    #import "NSStringColor-Prefix.pch"
     #import "NSString+Color.h"
 #endif
