@@ -1,4 +1,6 @@
 #Change Log
+##[__1.1.4__](https://github.com/nicolasgoutaland/NSString-Color/releases/tag/1.1.4)
+Added support for Watch OS 2.0, thanks to PR #1 from pivl
 ##[__1.1.3__](https://github.com/nicolasgoutaland/NSString-Color/releases/tag/1.1.3)
 Added library target
 ##[__1.1.2__](https://github.com/nicolasgoutaland/NSString-Color/releases/tag/1.1.2)
