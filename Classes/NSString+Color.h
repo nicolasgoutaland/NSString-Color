@@ -5,6 +5,8 @@
 //  Copyright 2014 Nicolas Goutaland. All rights reserved.
 //  Created by Nicolas Goutaland on 04/04/14.
 
+@class UIColor;
+
 /**
  @name NSString_Color_HEXADECIMAL_PREFIX
  */

@@ -7,6 +7,7 @@
 //
 //  Color names : http://en.wikipedia.org/wiki/Web_colors
 
+#import <UIKit/UIKit.h>
 #import "NSString+Color.h"
 
 @implementation NSString(Color)
