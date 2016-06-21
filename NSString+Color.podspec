@@ -2,7 +2,6 @@ Pod::Spec.new do |s|
   s.name         = "NSString+Color"
   s.version      = "1.1.3"
   s.summary      = "UIColor creation from NSString"
-  s.platform     = :ios
   s.description  = <<-DESC
 	  				NSString category allowing you to create UIColor from it.
 
@@ -24,4 +23,19 @@ Pod::Spec.new do |s|
   s.source_files  = 'Classes', 'Classes/**/*.{h,m}'
   s.exclude_files = 'Classes/Exclude'
   s.requires_arc = true
+  
+  pch_COLOR = <<-EOS
+#ifndef TARGET_OS_IOS
+  #define TARGET_OS_IOS TARGET_OS_IPHONE
+#endif
+#ifndef TARGET_OS_WATCH
+  #define TARGET_OS_WATCH 0
+#endif
+EOS
+
+  s.prefix_header_contents = pch_COLOR
+  s.ios.deployment_target = '5.0'
+  s.watchos.deployment_target = '2.0'
+  s.ios.frameworks = 'UIKit'
+  s.watchos.frameworks = 'UIKit'
 end
