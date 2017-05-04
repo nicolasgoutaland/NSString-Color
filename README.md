@@ -1,8 +1,8 @@
-#NSString+Color [![Build Status](https://travis-ci.org/nicolasgoutaland/NSString-Color.svg?branch=master)](https://travis-ci.org/nicolasgoutaland/NSString-Color)
+# NSString+Color [![Build Status](https://travis-ci.org/nicolasgoutaland/NSString-Color.svg?branch=master)](https://travis-ci.org/nicolasgoutaland/NSString-Color)
 
 Category on `NSString` allowing simple color instantiation from its content. Support web colors and custom colors code also.
 
-##Description
+## Description
 This category adds following methods to NSString.
 ```objective-c
 - (UIColor *)colorFromRGBcode   // Consider string as an hexadecimal RGB code
@@ -30,11 +30,11 @@ Last update added support for custom color keys, allowing you to define custom c
 
 ![ScreenShot](https://raw.github.com/nicolasgoutaland/NSString-Color/master/Assets/RegisteredColors.gif)
 
-##Usage
+## Usage
 * simply call one of added method on an NSString object
 * Preferred way is using representedColor method which will detect right color format
  
-##Example
+## Example
 ```objective-c
   [@"red" representedColor];        // UIColor selector name without suffix
   [@"redColor" representedColor];   // UIColor full selector name
@@ -50,7 +50,7 @@ Last update added support for custom color keys, allowing you to define custom c
   [@"roSyBroWn" colorFromName];     // Web color case insensitive
 ```
 
-##Custom color example
+## Custom color example
 ```objective-c
   [NSString registerColor:[@"#eeeeee"] withKey:@"descriptionText"]; /// Register a custom color
   [@"descriptionText" representedColor];  // Retrieve a custom color
@@ -58,12 +58,12 @@ Last update added support for custom color keys, allowing you to define custom c
 
 ```
 
-##Advantages
+## Advantages
 * Allows you to load colors from configuration files
 * Remove all boilerplate code induced by format checking
 * Add web colors
 
-##Bonus
+## Bonus
 If you are using UIColor categories to add some color code to your project, you can load them from configuration file too. Be careful, selector name are case sensitive.
 
 * [FPBrandColors](https://github.com/magtory/FPBrandColors)
@@ -84,11 +84,11 @@ If you are using UIColor categories to add some color code to your project, you 
   [@"cssLightgoldenrodyellowColor" representedColor];  // UIColor selector name from UIColor-CSSColors
 ```
 
-##Consideration
+## Consideration
 While colorFromName will return nil if color name is unknown, colorFromRGBAcode and colorFromRGBcode will return you an undefined color if hexadecimal code is invalid.
 Same apply to representedColor when forcing hexadecimal format (Prefixing with #)
 
-##Installation
+## Installation
 __Cocoapods__: `pod 'NSString+Color'`<br>
 __Manual__: Copy the __Classes__ folder in your project<br>
 
@@ -96,7 +96,7 @@ Import header in your project. .pch is a good place ;)
 
     #import "NSString+Color.h"
 
-##Versions
+## Versions
 1.1.4 : Added support for Watch OS 2.0, thanks to PR #1 from pivl<br/>
 1.1.3 : Added library target<br/>
 1.1.2 : Updated documentation<br/>
